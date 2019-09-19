@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Building landing page</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/style-section-slider.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal-window.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="creditly-master/creditly.css">
+    <link rel="stylesheet" href="creditly-master/teaser.css">
+    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="creditly-master/creditly.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="header dark-bg" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 column-50w">
+                    <div class="logo-site">
+                        <div class="logo-site__text1">BUILDING</div>
+                        <div class="logo-site__text2">Landing<br>page</div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 offset-4 column-50w">
+                    <nav class="menu">
+                        <div class="button-mob-menu" onclick="ShowModal('m1')">
+                            <input type="checkbox" id="htm">
+                            <label for="htm"></label>
+                            <span id="span1"></span>
+                            <span id="span2"></span>
+                            <span id="span3"></span>
+                        </div>
+                        <div class="modal-all" id="m1" onclick="HideModal()">
+                            <div class="topnav">
+                                <ul>
+                                    <li><a href="#home">Главная</a></li>
+                                    <li><a href="#features">Преимущества</a></li>
+                                    <li><a href="#about">О нас</a></li>
+                                    <li><a href="#pricing">Цены</a></li>
+                                    <li><a href="#contact">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="about-our-team">
+                        <p>О НАШЕЙ КОМАНДЕ</p>
+                        <h1>История нашей команды</h1>
+                        <p>Наша команда работает с 2018 года,оказывая услуги по созданию сайтов,по своиму графическому и
+                            фирменному стилю.</p>
+                        <div class="about-our-team__buttons">
+                            <button><a href="#pricing">Купить</a></button>
+                            <button><a href="#rate">Оценить</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="bg-col-phone">
+                        <img src="img/devices-kopia2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.header -->
+    <section class="features" id="features">
+        <div class="container-fluid">
+            <p class="section-title-up text-center">Обзор работы</p>
+            <h2 class="section-title-down  text-center"> Наши преимущества</h2>
+            <div class="title-lines">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="features-icons  features-icons_indent-top">
+                            <div class="features-icon"><img src="img/icons/Monitor.png" alt=""></div>
+                            <!-- /.features-icon -->
+                            <div class="features-icons__title">Удобная система управления</div>
+                            <!-- /.features-icons__title -->
+                            <div class="features-icons__subtitle">Бесплатный тест-драйв системы. Гарантия защиты
+                                системы. Возможность перейти к другому разработчику.</div>
+                            <!-- /.features-icons__subtitle -->
+                        </div>
+                        <!-- /.features-icons -->
+                    </div>
+                    <!-- /.col-3 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="features-icons">
+                            <div class="features-icon">
+                                <div></div><img src="img/icons/Settings.png" alt="">
+                            </div>
+                            <!-- /.features-icon -->
+                            <div class="features-icons__title">Надежный хостинг и поддрежка
+                            </div>
+                            <!-- /.features-icons__title -->
+                            <div class="features-icons__subtitle">Надежный хостинг и поддрежка
+                            </div>
+                            <!-- /.features-icons__subtitle -->
+                        </div>
+                        <!-- /.features-icons -->
+                    </div>
+                    <!-- /.col-3 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="features-icons">
+                            <div class="features-icon"><img src="img/icons/Like.png" alt=""></div>
+                            <!-- /.features-icon -->
+                            <div class="features-icons__title">Полная независимость вашего сайта
+                            </div>
+                            <!-- /.features-icons__title -->
+                            <div class="features-icons__subtitle">Полный доступ к сайту, открытый исходный код
+                                Возможность переехать на другой хостинг
+                            </div>
+                            <!-- /.features-icons__subtitle -->
+                        </div>
+                        <!-- /.features-icons -->
+                    </div>
+                    <!-- /.col-3 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="features-icons features-icons_indent-bottom">
+                            <div class="features-icon"><img src="img/icons/Phone.png" alt=""></div>
+                            <!-- /.features-icon -->
+                            <div class="features-icons__title">Любая адаптация под телефоны
+                            </div>
+                            <!-- /.features-icons__title -->
+                            <div class="features-icons__subtitle">Полная адаптация под все виды устройств, начиная
+                                телефоном, заканчивая ПК и MacBook
+                            </div>
+                            <!-- /.features-icons__subtitle -->
+                        </div>
+                        <!-- /.features-icons -->
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-3 -->
+            <div class="dividing_line"></div>
+            <div class="container">
+                <div class="row row_adaptive" id="rate">
+                    <div class="col-lg-6">
+                        <div class="features-img">
+                            <img src="img/devices.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- /.col-6 -->
+                    <div class="col-lg-6">
+                        <p class="section-title-up">ПОДРОБНОСТИ НАШЕЙ РАБОТЫ
+
+
+
+                        </p>
+                        <!-- /.section-title-up -->
+                        <h2 class="section-title-down">Красив на каждом устройстве</h2>
+                        <!-- /.section-title-down -->
+                        <div class="title-lines title-lines-position_left">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <!-- /.section-title-separator -->
+                        <div class="features-text">
+                            <div class="features-text__despr">Чтобы долго не искать, где заказать сайт по оптимальной
+                                цене, выбирайте нашу компанию.Наша молодая компания готова выполнить все ваши планы на
+                                сайт, чтобы вашим клиентам нравилось оставаться на сайте как можно дольше.
+                            </div>
+                            <!-- /.features-text__despr -->
+                            <div class="features-text-icons">
+                                <div class="features-text-icon">
+                                    <div class="features-text-icon-img"><img src="img/icons/Cup.png" alt=""></div>
+                                    <div class="features-text-icon__despr">Потрясающий дизайн</div>
+                                    <!-- /.features-text-icons__despr -->
+                                </div>
+                                <!-- /.features-text-icons -->
+                                <div class="features-text-icon">
+                                    <div class="features-text-icon-img"><img src="img/icons/Mouse.png" alt=""></div>
+                                    <div class="features-text-icon__despr">Полностью отзывчивый</div>
+                                    <!-- /.features-text-icons__despr -->
+                                </div>
+                                <!-- /.features-text-icons -->
+                                <div class="features-text-icon">
+                                    <div class="features-text-icon-img"><img src="img/icons/Energy.png" alt=""></div>
+                                    <div class="features-text-icon__despr">Быстродействие сайта</div>
+                                    <!-- /.features-text-icons__despr -->
+                                </div>
+                                <!-- /.features-text-icons -->
+                                <div class="features-text-icon">
+                                    <div class="features-text-icon-img"><img src="img/icons/Speedometer.png" alt="">
+                                    </div>
+                                    <div class="features-text-icon__despr">Тонны функций и простота в использовании
+                                    </div>
+                                    <!-- /.features-text-icons__despr -->
+                                </div>
+                            </div>
+                            <!-- /.features-text-icons -->
+                        </div>
+                        <!-- /.features-text -->
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-6 -->
+            <div class="container-fluid" id="testimonials">
+                <div class="color-section">
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div class="col-lg-5">
+                                <p class="section-title-up">ЕЩЕ БОЛЬШЕ ПОДРОБНОСТЕЙ</p>
+                                <!-- /.section-title-up -->
+                                <h2 class="section-title-down">Идеально выполненый</h2>
+                                <!-- /.section-title-down -->
+                                <div class="title-lines title-lines-position_left">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <!-- /.section-title-separator -->
+                                <div class="features-text">
+                                    <div class="features-text__despr">Планируете создать небольшой сайт-визитку? Наши
+                                        профессионалы сделают для вас сайт по доступной цене, гарантируя, что его
+                                        функциональность будет полностью отвечать всем поставленным вами требованиям.
+                                        Чтобы узнать, сколько стоит сайт «под ключ» с интересующим вас функционалом,
+                                        обратитесь к нашим специалистам.</div>
+                                    <!-- /.features-text__despr -->
+                                    <!-- /.features-text-icons -->
+                                </div>
+                                <!-- /.features-text -->
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="features-img">
+                                    <img src="img/iPhone_5.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider-section" id="slider-section">
+        <div class="container" id="about">
+            <div class="row">
+                <div class="col-12">
+                    <div class="slider-title">
+                        <strong>Наша команда</strong>
+                        <h3>Планы</h3>
+                    </div>
+                    <div class="title-lines">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="parent-slider">
+
+                        <div class="parent-slider_clild">
+                            <p>Программисты делают свою работу не потому, что ожидают оплаты, а потому что получают
+                                удовольствие от программирования. <br></p>
+                            <div class="specialist-card">
+                                <div class="specialist-card_img"><img src="img/rrr3.jpg" alt=""></div>
+                                <div>
+                                    <small>Павук </small>
+                                    <strong>SEO, Глава компании</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parent-slider_clild">
+                            <p>Я изобрел понятие «объектно-ориентированный», и могу заявить, что не имел в виду C++.</p>
+                            <div class="specialist-card">
+                                <div class="specialist-card_img"><img src="img/rrr4.jpg" alt=""></div>
+                                <div>
+                                    <small>Павук</small>
+                                    <strong>Вёрстка, дизайн,script</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parent-slider_clild">
+                            <p>Иногда лучше остаться спать дома в понедельник, чем провести всю неделю в отладке
+                                написанного в понедельник кода...</p>
+                            <div class="specialist-card">
+                                <div class="specialist-card_img"><img src="img/rrr5.jpg" alt=""></div>
+                                <div>
+                                    <small>Павук</small>
+                                    <strong>Вёрстка, дизайн,script</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parent-slider_clild">
+                            <p>Многие из вас знакомы с достоинствами программиста. Их всего три, и разумеется это: лень,
+                                нетерпеливость и гордыня.</p>
+                            <div class="specialist-card">
+                                <div class="specialist-card_img"><img src="img/rrr6.jpg" alt=""></div>
+                                <div>
+                                    <small>Павук</small>
+                                    <strong>копирайтинг
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="like-what-you-see" style="display: none;">
+        <div class="like-what-you-see-parent">
+            <div class="like-what-you-see-text"><strong>Like what you see?</strong><small>Get this great theme
+                    now!</small></div>
+            <div class="buttons">
+                <button>view features</button>
+                <button>download now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-selection" id="price-selection">
+        <div class="row no-gutters" id="pricing">
+            <div class="col-lg-12">
+                <div class="head-price-selection">
+                    <p>СЛОЖНОСТЬ</p>
+                    <h2>Цены и подробности работ</h2>
+                    <div class="title-lines">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="table-price">
+                <div class="row no-gutters ">
+                    <div class="col-lg-3 col-md-6">
+                        <div class=" features-price">
+                            <div>
+                                <h3>Консультация</h3>
+                            </div>
+                            <div class="features-price-text">
+                                <p>Бесплатная консультация с нашим менеджером.</p>
+                            </div>
+                            <div class="ordernow"><label class="btn__overflow-false"><a
+                                        href="#contact">Обратиться</a></label>
+                            </div>
+                            <div class="price">
+                                <h4><span>$</span>0 <p></p>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="features-price">
+                            <div>
+                                <h3>Базовая</h3>
+                            </div>
+                            <div class="features-price-text">
+                                <p>Создание сайта</p>
+                            </div>
+                            <div class="ordernow"><label class="btn" for="modal-1">КУПИТЬ</label></div>
+                            <div class="price">
+                                <h4><span>$</span>100 <p></p>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="features-price">
+                            <div>
+                                <h3>Профессиональная</h3>
+                            </div>
+                            <div class="features-price-text">
+                                <p>Создание и продвижение сайта</p>
+                            </div>
+                            <div class="ordernow"><label class="btn" for="modal-1">КУПИТЬ</label></div>
+                            <div class="price">
+                                <h4><span>$</span>250 <p></p>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="features-price">
+                            <div>
+                                <h3>Под «ключ»</h3>
+                            </div>
+                            <div class="features-price-text">
+                                <p>Создание, продвижение, вывод сайта на хостинг, подключение СMS</p>
+                            </div>
+                            <div class="ordernow"><label class="btn" for="modal-1">КУПИТЬ</label></div>
+                            <div class="price">
+                                <h4><span>$</span>500 <p></p>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-us" id="contact-us">
+        <div class="container-fluid" id="contact">
+            <div class="container">
+                <div class="row no-gutters ">
+                    <div class="col-lg-12">
+                        <div class="head-price-selection">
+                            <p style="text-transform: uppercase;">Оставайтесь с нами на связи</p>
+                            <h2>Наши контакты</h2>
+                            <div class="title-lines">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="features-icons_contact">
+                            <div class="features-icon_contact"><img src="img/icons/Phone.png" alt=""></div>
+                            <div class="features-icons__subtitle_contact">Наш телефон:14882281766</br> Факс:14882281766
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="features-icons_contact">
+                            <div class="features-icon_contact"><img src="img/icons/Pointer.png" alt=""></div>
+                            <div class="features-icons__subtitle_contact">Малая Ямская улица, 58Д</br> Нижний Новгород,
+                                Россия </br> 603000</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="features-icons_contact">
+                            <div class="features-icon_contact"><img src="img/icons/Envelope.png" alt=""></div>
+                            <div class="features-icons__subtitle_contact debag__subtitle_contact">Suppurt@yourname.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_communication">
+                <div class="row no-gutters">
+                    <div class="col-12">
+                        <div class="position_communication_form">
+                            <div class="form_data">
+                                <form class="communication_data" data-persist="garlic" method="POST">
+                                    <div class="emptiness "></div>
+                                    <input type="Name" placeholder="Имя*" class="Name">
+                                    <input type="Email" placeholder="Email*" class="Email">
+                                    <input type="Subject" placeholder="Тема*" class="Subject">
+                                </form>
+                            </div>
+                            <div class=" form_message">
+                                <form class="communication_message" data-persist="garlic" method="POST">
+                                    <div class="emptiness"></div>
+                                    <textarea name="message" placeholder="Сообщение*"></textarea>
+                                    <div class="button-send-message"><a href="#" class="button"
+                                            onclick="return false">ОТПРАВИТЬ СООБЩЕНИЕ</a></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 settings-map">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A00bff5ca5c8ccb5f1594c1f6154a0322d1a59422622a904fb03789d6b7ee4648&amp;source=constructor"
+                        width="100%" height="370" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="conteiner">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <div class="footer-icons">
+                        <div class="footer-icon"><a href="#" onclick="return false"><img src="img/icons/Twitter.png"
+                                    alt=""></a></div>
+                        <div class="footer-icon"><a href="#" onclick="return false"><img src="img/icons/Twitter.png"
+                                    alt=""></a></div>
+                        <div class="footer-icon"><a href="#" onclick="return false"><img src="img/icons/Twitter.png"
+                                    alt=""></a></div>
+                        <div class="footer-icon"><a href="#" onclick="return false"><img src="img/icons/Twitter.png"
+                                    alt=""></a></div>
+                        <div class="footer-icon"><a href="#" onclick="return false"><img src="img/icons/Twitter.png"
+                                    alt=""></a></div>
+                    </div>
+                    <div class="copyrights">COPURIGHT © 2019 BUILDING LANDING PAGE</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Модальное окно -->
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-lg-12 col-md-12">
+                <div class="modal">
+                    <input class="modal-open" id="modal-1" type="checkbox" hidden>
+                    <div class="modal-wrap" aria-hidden="true" role="dialog">
+                        <label class="modal-overlay" for="modal-1"></label>
+                        <div class="banner">
+                            <form class="creditly-card-form">
+                                <div class="top-level-wrapper gray-theme-wrapper" style="display:none;">
+                                </div>
+                                <div class="top-level-wrapper blue-theme-wrapper">
+                                    <section class="creditly-wrapper blue-theme">
+                                        <div class="credit-card-wrapper">
+                                            <div class="first-row form-group">
+                                                <div class="col-sm-8 controls">
+                                                    <label class="control-label">Card Number</label>
+                                                    <input class="number credit-card-number form-control" type="text"
+                                                        name="number" pattern="(\d*\s){3}\d*" inputmode="numeric"
+                                                        autocomplete="cc-number" autocompletetype="cc-number"
+                                                        x-autocompletetype="cc-number"
+                                                        placeholder="&#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149;">
+                                                </div>
+                                                <div class="col-sm-4 controls">
+                                                    <label class="control-label">CVV</label>
+                                                    <input class="security-code form-control" · inputmode="numeric"
+                                                        pattern="\d*" type="text" name="security-code"
+                                                        placeholder="&#149;&#149;&#149;">
+                                                </div>
+                                            </div>
+                                            <div class="second-row form-group">
+                                                <div class="col-sm-8 controls">
+                                                    <label class="control-label">Name on Card</label>
+                                                    <input class="billing-address-name form-control" type="text"
+                                                        name="name" placeholder="John Smith">
+                                                </div>
+                                                <div class="col-sm-4 controls">
+                                                    <label class="control-label">Expiration</label>
+                                                    <input class="expiration-month-and-year form-control" type="text"
+                                                        name="expiration-month-and-year" placeholder="MM / YY">
+                                                </div>
+                                            </div>
+                                            <button class="creditly-blue-theme-submit"
+                                                onclick="alert('Вы успешно преобрели пакет!')"><span>Submit</span></button>
+                                        </div>
+                                    </section>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+        $("#navToggle").click(function () {
+            $(this).toggleClass("active");
+            $(".overlay").toggleClass("open");
+            // this line ▼ prevents content scroll-behind
+            $("body").toggleClass("locked");
+        });
+
+        $(".overlayMenu ul li a").click(function () {
+            $(this).toggleClass("active");
+            $(".overlay").toggleClass("open");
+            // this line ▼ prevents content scroll-behind
+            $("body").toggleClass("locked");
+        });
+    </script>
+    <!-- МОДАЛЬНОЕ ОКНО! -->
+    <script type="text/javascript">
+        $('.btn').click(function () {
+            $('body').css('overflow', 'hidden');
+
+        });
+
+        $('.modal-overlay').click(function () {
+            $('body').css('overflow', '');
+
+        });
+    </script>
+    <!-- Смирнов Н.А. -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(".button-mob-menu").click(function () {
+            $(".topnav").toggleClass("topnav-slide");
+            $(".button-mob-menu").toggleClass("button-mob-menu-slide");
+            $(".modal-all").toggleClass("modal-all-active");
+            $("body").toggleClass("ScrollMenuNone");
+        });
+
+        $(".topnav ul li a").click(function () {
+            $(".topnav").removeClass("topnav-slide");
+            $(".button-mob-menu").removeClass("button-mob-menu-slide");
+            $(".button-mob-menu input").prop('checked', false);
+            $(".modal-all").removeClass("modal-all-active");
+            $("body").removeClass("ScrollMenuNone");
+        })
+
+        $(".modal-all").click(function () {
+            $(".topnav").removeClass("topnav-slide");
+            $(".modal-all").removeClass("modal-all-active");
+            $(".button-mob-menu").removeClass("button-mob-menu-slide");
+            $(".button-mob-menu input").prop('checked', false);
+            $("body").removeClass("ScrollMenuNone");
+        });
+
+        //скрипт плавного якоря
+        const anchors = document.querySelectorAll('a[href*="#"]')
+        for (let anchor of anchors) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault()
+
+                const blockID = anchor.getAttribute('href')
+
+                document.querySelector('' + blockID).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                })
+            })
+        }
+                            //скрипт плавного якоря
+    </script>
+
+
+    <script>
+        window.JQuery || document.write('<script src="js/jquery-3.3.1.slim.min.js"><\/script>')
+    </script>
+
+    <script>
+        $(document).ready(function () { /*Все что внутри будет работать если документ загрузился*/
+            $('.header-contacts__button').on("click", function () {
+                $('.overlay').show()
+            });
+            $('.popup-close').on("click", function () {
+                $('.overlay').hide()
+            })
+        });
+    </script>
+    <!-- <script src="fotorama-4.6.4/fotorama.js"></script> -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- Settings slider Belevich N.K.-->
+    <script type="text/javascript">
+        $('.parent-slider').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            pauseOnHover: true,
+            pauseOnDotsHover: true,
+            speed: 1000,
+            dots: true,
+            arrows: false,
+            responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    draggable: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            ]
+
+        });
+    </script>
+    <!-- Settings slider Belevich N.K.-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+
+            // For the blue theme
+            var blueThemeCreditly = Creditly.initialize(
+                '.creditly-wrapper.blue-theme .expiration-month-and-year',
+                '.creditly-wrapper.blue-theme .credit-card-number',
+                '.creditly-wrapper.blue-theme .security-code',
+                '.creditly-wrapper.blue-theme .card-type');
+
+            $(".creditly-blue-theme-submit").click(function (e) {
+                e.preventDefault();
+                var output = blueThemeCreditly.validate();
+                if (output) {
+                    // Your validated credit card output
+                    console.log(output);
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            var switchThemes = function (e) {
+                $(".theme-navigation .nav").find("li").removeClass("active");
+                $(e.currentTarget).closest("li").addClass("active");
+                var target = $(e.currentTarget).attr("data-target");
+                $(".top-level-wrapper").hide();
+                $("." + target).show();
+            };
+
+            $(".blue-theme-switch").click(switchThemes);
+
+        });
+    </script>
+
+
+
+    <script src="js/scrollbuttonUp.js"></script>
+
+</body>
+
+</html>
